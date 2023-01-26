@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time of Ramadan</title>
+        <link href="Homepage.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div>
+            <h1>السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّهِ وَبَرَكاتُهُ</h1>
+            <h3>Website Developed by ❤ Fardinuzzaman Tazim</h3>
+            <h2><span class="highlight-word-color">RAMADAN</span> IS <span class="highlight-word-color-2">COMING</span></h2>
+        </div>
+        <div class="container">
+            <div class="countdown">
+                <div id="day">00</div>
+                <div id="hour">00</div>
+                <div id="minute">00</div>
+                <div id="second">00</div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var countDate = new Date('Mar 22, 2023 06:00:00').getTime();
+
+            function newYear(){
+                var now = new Date().getTime();
+                gap = countDate - now;
+
+                var second = 1000;
+                var minute = second * 60;
+                var hour = minute * 60;
+                var day = hour * 24;
+
+                var d = Math.floor(gap / (day));
+                var h = Math.floor((gap % (day)) / (hour));
+                var m = Math.floor((gap % (hour)) / (minute));
+                var s = Math.floor((gap % (minute)) / second);
+
+                document.getElementById('day').innerText = d;
+                document.getElementById('hour').innerText = h;
+                document.getElementById('minute').innerText = m;
+                document.getElementById('second').innerText = s;
+
+            }
+
+            setInterval(function(){
+                newYear();
+            },1000)
+        </script>
+         <button class="btn btn--primary"; oneclick="alert('The page is in progress. It will be available soon!')">Learn More About Ramadan</button>
+        </body>
+    </HTML>
