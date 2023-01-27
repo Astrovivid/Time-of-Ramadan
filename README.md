@@ -7,7 +7,7 @@ site will be showing us that how long time is left for start of Ramadan. I devel
 I will create another page and I will attach it with this repo as soon as possible.</p>
 
 <h2>Message To Beginners</h2>
-<p2>If you're beginner with the topic of HTML and CSS, I hightly recommend you to use <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
+<p2>If you're beginner with the topic of HTML and CSS, I highly recommend you to use <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
 It has so many cool features which are so important and help you to build anything you want.</p2>
 
 <h3>MIT License</h3>
